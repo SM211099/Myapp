@@ -17,7 +17,7 @@ pipeline {
 
         stage("Docker-run") {
             steps {
-                sh "cd /var/lib/jenkins/workspace/First && docker run -itd myapp"
+                sh "cd /var/lib/jenkins/workspace/First && docker run -itd -p 80:80 --name Shubham myapp"
             }
         }
 
