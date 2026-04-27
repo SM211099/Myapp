@@ -5,7 +5,7 @@ pipeline {
 
         stage("GIT") {
             steps {
-                git "https://github.com/SM211099/Myapp.git"
+                sh "git clone https://github.com/SM211099/Myapp.git"
             }
         }
 
