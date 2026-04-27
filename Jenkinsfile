@@ -4,7 +4,7 @@ pipeline {
             stage ("GIT") {
                 staps {
 
-                git ""
+                git "https://github.com/SM211099/Myapp.git"
             }
         
             stage ("Compose") {
