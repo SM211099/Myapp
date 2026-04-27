@@ -9,12 +9,6 @@ pipeline {
             }
         }
 
-        stage("Compose") {
-            steps {
-                sh "cd /var/lib/jenkins/workspace/First && docker compose up"
-            }
-        }
-
         stage("Docker-Build") {
             steps {
                 sh "cd /var/lib/jenkins/workspace/First && docker build -t myapp ."
