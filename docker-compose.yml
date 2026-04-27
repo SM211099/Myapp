@@ -1,11 +1,11 @@
 version: "3.8"
 
-sevices:
+services:
   sql:
-	  name: mysql
-	  image: mysql
-  env:
-	  - MYSQL_ROOT_PASSWORD= root
-	  - MYSQL_DATABASE=devops
-  ports:
-	- "3306:3306"
+    container_name: mysql
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=devops
+    ports:
+      - "3306:3306"
